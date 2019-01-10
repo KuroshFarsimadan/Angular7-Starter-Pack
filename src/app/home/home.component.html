@@ -1,0 +1,16 @@
+<p [class.red]="success">
+  home works!
+</p>
+
+<p [ngClass]="{'red': success, 'green': !success }">
+  if true, then false OR if false, then true
+</p>
+
+<p [style.color]="success ? 'green': 'red'">
+  What is this
+</p>
+
+<button (click)="clickMe()">A click button for home</button>
+
+{{dataFromService}}
+<button (click)="retrieveMadness()">A click button http madness</button>
